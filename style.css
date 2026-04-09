@@ -312,11 +312,6 @@ h2 {
 
 .about-detail{
   line-height: 40px;
-=======
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 a {
@@ -621,11 +616,70 @@ h2 {
 
 
 
-
-
-
-
 .about-detail{
   line-height: 40px;
 
+}
+
+
+
+
+
+
+/* 반응형 */
+
+@media (max-width: 768px) {
+
+  /* 전체 여백 제거 */
+  body {
+    padding: 0;
+  }
+
+
+  .container{
+    width: 90%;
+  }
+  .hero {
+    padding: 30px 20px;
+    height: auto;
+  }
+
+  .section {
+    padding: 60px 20px;
+  }
+
+  /* 타이포 줄이기 */
+  .hero-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  /* 스킬 */
+  .skill {
+    font-size: 18px;
+  }
+
+  .skill-detail {
+    font-size: 14px;
+  }
+
+  /* 프로젝트 카드 */
+  .project-card {
+    padding: 15px;
+  }
+
+  /* 다크모드 버튼 위치 */
+  .dark-toggle {
+    top: 15px;
+    right: 15px;
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+.hero-title {
+  word-break: keep-all;
+}
 }
