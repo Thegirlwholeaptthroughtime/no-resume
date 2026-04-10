@@ -320,7 +320,7 @@ a {
 }
 
 a:hover {
-  color: #000;
+  color: #ccc;
   transition: 0.2s;
 }
 
@@ -682,4 +682,69 @@ h2 {
 .hero-title {
   word-break: keep-all;
 }
+}
+
+
+
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 40px 60px;
+  border-top: 1px solid #ccc;
+ 
+
+  font-size: 14px;
+}
+
+.footer a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #111;
+  position: relative;
+}
+
+/* hover 밑줄 애니메이션 */
+.footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 1px;
+  background: #111;
+  transition: 0.3s;
+}
+
+.footer a:hover::after {
+  width: 100%;
+}
+
+
+.dark .footer {
+  border-color: #333;
+}
+
+.dark .footer a {
+  color: #fff;
+}
+
+.dark .footer a::after {
+  background: #fff;
+}
+
+
+.dark .footer {
+  border-color: #333;
+}
+
+.dark .footer a {
+  color: #fff;
+}
+
+.dark .footer a::after {
+  background: #fff;
 }
